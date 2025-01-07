@@ -7,9 +7,8 @@
 }
 
 body {
-<<<<<<< HEAD
-    background: linear-gradient(135deg, #B3C7F9, #F0E6FF); /* Soft gradient with calm pastel colors */
-    color: #333;
+    background: linear-gradient(135deg, #28bbb4, #1839a7); /* Soft gradient with cool pastel tones */
+    color: #222222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,18 +17,6 @@ body {
     background-position: center;
     font-size: 14px;
     line-height: 1.5;
-=======
-   background: linear-gradient(135deg, #B3C7F9, #F0E6FF); /* Soft gradient with calm pastel colors */
-   color: #333;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   background-size: cover;
-   background-position: center;
-   font-size: 14px;
-   line-height: 1.5;
->>>>>>> 4b1ac59 (updated)
 }
 
 .app-container {
@@ -49,8 +36,8 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #A3C8FF, #A6C9E8); /* Softer gradient for header */
-    color: #3D4B67;
+    background: linear-gradient(135deg, #7B9DFF, #A1C9FF); /* Soft blue gradient for header */
+    color: #3A4F66;
     text-align: center;
     padding: 25px 0;
     font-size: 2rem; /* Decreased font size */
@@ -61,7 +48,7 @@ header {
 .tabs {
     display: flex;
     justify-content: center;
-    background-color: #f8f9fb;
+    background-color: #f4f6fb;
     border-top: 2px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -73,13 +60,13 @@ header {
     border: none;
     font-size: 1rem; /* Decreased font size */
     font-weight: 500;
-    color: #5A6A76;
+    color: #4B5D6B;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tab:hover {
-    background-color: #A3C8FF; /* Soft blue background on hover */
+    background-color: #7B9DFF; /* Soft blue background on hover */
     color: white;
 }
 
@@ -103,20 +90,20 @@ input[type="text"] {
     border-radius: 25px;
     border: 1px solid #ddd;
     font-size: 1rem; /* Decreased font size */
-    background-color: #f0f0f0;
+    background-color: #f0f9ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 input[type="text"]:focus {
-    background-color: #e0e7fe;
-    border-color: #A3C8FF;
+    background-color: #e3f7fc;
+    border-color: #7B9DFF;
     outline: none;
 }
 
 button {
     padding: 10px 18px;
-    background-color: #A3C8FF; /* Soft blue background */
+    background-color: #3a69f7; /* Soft blue background */
     color: white;
     border: none;
     border-radius: 25px;
@@ -127,7 +114,7 @@ button {
 }
 
 button:hover {
-    background-color: #7BB7FF; /* Slightly darker blue */
+    background-color: #1ad5e2; /* Slightly darker blue */
     transform: scale(1.05);
 }
 
@@ -137,7 +124,7 @@ ul {
 }
 
 ul li {
-    background-color: #f9f9f9;
+    background-color: #0e0101;
     padding: 12px;
     margin-bottom: 12px; /* Reduced margin */
     border-radius: 12px;
@@ -150,7 +137,7 @@ ul li {
 
 ul li:hover {
     transform: translateY(-4px); /* Slight lift effect */
-    background-color: #e8f3fe;
+    background-color: #e1f0ff;
 }
 
 /* Task completed - Green background */
@@ -162,13 +149,13 @@ ul li.completed {
 
 /* Task in progress - Yellow background */
 ul li.in-progress {
-    background-color: #FFF3CD; /* Soft yellow for tasks in progress */
+    background-color: #FFF9E0; /* Soft yellow for tasks in progress */
     color: #856404;
 }
 
 /* Delete Button */
 .delete-btn {
-    background-color: #FF5C8D; /* Red background for delete */
+    background-color: #FF6F61; /* Coral red background for delete */
     color: white;
     border: none;
     padding: 8px 12px;
@@ -178,7 +165,7 @@ ul li.in-progress {
 }
 
 .delete-btn:hover {
-    background-color: #FF3B65; /* Darker red */
+    background-color: #FF3B5C; /* Darker coral red */
 }
 
 /* Mark as Complete Button */
@@ -198,7 +185,6 @@ ul li.in-progress {
 
 /* Add texture or subtle pattern to background */
 body::before {
-<<<<<<< HEAD
     content: '';
     position: absolute;
     top: 0;
@@ -207,16 +193,6 @@ body::before {
     height: 100%;
     background: url('https://www.transparenttextures.com/patterns/geometry.png'); /* Subtle texture */
     opacity: 0.05; /* Very subtle texture */
-=======
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: url('https://www.transparenttextures.com/patterns/geometry.png'); /* Subtle texture */
-   opacity: 0.05; /* Very subtle texture */
->>>>>>> 4b1ac59 (updated)
 }
 
 /* Media Query for smaller screens */
