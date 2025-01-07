@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+
+        <div class="tabs">
+            <button class="tab" onclick="showTasks('daily')">Daily</button>
+            <button class="tab" onclick="showTasks('weekly')">Weekly</button>
+            <button class="tab" onclick="showTasks('monthly')">Monthly</button>
+        </div>
+
+        <div id="daily" class="task-list">
+            <h2>Daily Tasks</h2>
+            <input type="text" id="daily-input" placeholder="Add daily task...">
+            <button onclick="addTask('daily')">Add</button>
+            <ul id="daily-tasks"></ul>
+        </div>
+
+        <div id="weekly" class="task-list">
+            <h2>Weekly Tasks</h2>
+            <input type="text" id="weekly-input" placeholder="Add weekly task...">
+            <button onclick="addTask('weekly')">Add</button>
+            <ul id="weekly-tasks"></ul>
+        </div>
+
+        <div id="monthly" class="task-list">
+            <h2>Monthly Tasks</h2>
+            <input type="text" id="monthly-input" placeholder="Add monthly task...">
+            <button onclick="addTask('monthly')">Add</button>
+            <ul id="monthly-tasks"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

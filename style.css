@@ -1,0 +1,247 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+body {
+<<<<<<< HEAD
+    background: linear-gradient(135deg, #B3C7F9, #F0E6FF); /* Soft gradient with calm pastel colors */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px;
+    line-height: 1.5;
+=======
+   background: linear-gradient(135deg, #B3C7F9, #F0E6FF); /* Soft gradient with calm pastel colors */
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   font-size: 14px;
+   line-height: 1.5;
+>>>>>>> 4b1ac59 (updated)
+}
+
+.app-container {
+    background-color: white;
+    width: 70%;  /* Decreased width for smaller floating window */
+    max-width: 750px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+}
+
+.app-container:hover {
+    transform: scale(1.02);
+}
+
+header {
+    background: linear-gradient(135deg, #A3C8FF, #A6C9E8); /* Softer gradient for header */
+    color: #3D4B67;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 2rem; /* Decreased font size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #f0f0f0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fb;
+    border-top: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    flex: 1;
+    padding: 12px; /* Decreased padding */
+    background-color: #fff;
+    border: none;
+    font-size: 1rem; /* Decreased font size */
+    font-weight: 500;
+    color: #5A6A76;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #A3C8FF; /* Soft blue background on hover */
+    color: white;
+}
+
+.tab:focus {
+    outline: none;
+}
+
+.task-list {
+    display: none;
+    padding: 20px;
+}
+
+.task-list.active {
+    display: block;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px; /* Decreased padding */
+    margin-top: 10px; /* Decreased margin */
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem; /* Decreased font size */
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #e0e7fe;
+    border-color: #A3C8FF;
+    outline: none;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: #A3C8FF; /* Soft blue background */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem; /* Decreased font size */
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #7BB7FF; /* Slightly darker blue */
+    transform: scale(1.05);
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 12px; /* Reduced margin */
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-4px); /* Slight lift effect */
+    background-color: #e8f3fe;
+}
+
+/* Task completed - Green background */
+ul li.completed {
+    background-color: #D4EDDA; /* Soft green for completed tasks */
+    text-decoration: line-through;
+    color: #6C757D;
+}
+
+/* Task in progress - Yellow background */
+ul li.in-progress {
+    background-color: #FFF3CD; /* Soft yellow for tasks in progress */
+    color: #856404;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #FF5C8D; /* Red background for delete */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #FF3B65; /* Darker red */
+}
+
+/* Mark as Complete Button */
+.complete-btn {
+    background-color: #28a745; /* Green for complete */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complete-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Add texture or subtle pattern to background */
+body::before {
+<<<<<<< HEAD
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/geometry.png'); /* Subtle texture */
+    opacity: 0.05; /* Very subtle texture */
+=======
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('https://www.transparenttextures.com/patterns/geometry.png'); /* Subtle texture */
+   opacity: 0.05; /* Very subtle texture */
+>>>>>>> 4b1ac59 (updated)
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .app-container {
+        width: 85%;
+    }
+
+    header {
+        font-size: 1.8rem; /* Slightly smaller font for smaller screens */
+    }
+
+    .tabs {
+        font-size: 0.95rem; /* Slightly smaller font */
+    }
+
+    .tab {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 75%;
+    }
+
+    button {
+        padding: 9px 16px;
+    }
+}
